@@ -24,7 +24,7 @@ html {
     width: 100%;
     height: fit-content;
     justify-content: space-between;
-    background-color: #ffffff21
+    background-color: #ffffff13
 
 }
 
@@ -37,10 +37,19 @@ html {
     font-family: 'Modern No. 20', sans-serif;
 }
 
-.navbar img {
-    width: 3rem;
+.navbar a {
+
+    height: 2rem;
+    width: 2rem;
     margin: 1rem;
     margin-right: 1.5rem;
+    align-content: center;
+}
+
+.navbar i{
+    font-size: 2rem;
+    text-align: center;
+    color: black;
 }
 
 .hero {
@@ -89,4 +98,8 @@ html {
 
 .scrolldown img {
     width: 4rem;
+}
+
+.navbar a:hover {
+
 }
