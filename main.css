@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+}
+html {
+    background: url(media/paper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: url(media/frame.png);
+    width: 70rem;
+    height: 70rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero h1 {
+    font-family: 'Parisienne', cursive;
+    font-size: 4rem;
+    margin: 20px;
+}
+
+.hero h2 {
+    font-family: 'Modern No. 20', sans-serif;
+    font-size: 3rem;
+    margin: 20px;
+                                                
+}
+
+.herosub {
+    display: flex;
+    flex-direction: row;
+    font-family: 'open sans', sans-serif ;
+    gap: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
+
+
+#year {
+    font-family: 'open sans', sans-serif ;
+    gap: 1rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
