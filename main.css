@@ -2,9 +2,8 @@ body {
     margin: 0;
 }
 html {
-    background: url(media/paper.jpg);
+    background: url(media/paper-brown.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .section1 {
@@ -18,10 +17,30 @@ html {
 }
 
 .navbar {
+    display: flex;
+    flex-direction: row;
     position: fixed;
     top: 0;
     width: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    background-color: #ffffff21
 
+}
+
+.navbar h3 {
+    margin: 1rem;
+    margin-left: 1.5rem;
+    text-align: center;
+    align-self: center;
+    font-size: 2rem;
+    font-family: 'Modern No. 20', sans-serif;
+}
+
+.navbar img {
+    width: 3rem;
+    margin: 1rem;
+    margin-right: 1.5rem;
 }
 
 .hero {
@@ -66,4 +85,8 @@ html {
     gap: 1rem;
     font-size: 1.3rem;
     font-weight: 600;
+}
+
+.scrolldown img {
+    width: 4rem;
 }
