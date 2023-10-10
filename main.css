@@ -3,7 +3,8 @@ body {
 }
 html {
     background: url(media/paper-brown.jpg);
-    background-size: cover;
+    background-size: stretch;
+    background-repeat: no-repeat;
 }
 
 .section1 {
@@ -21,7 +22,7 @@ html {
     flex-direction: row;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: fit-content;
     justify-content: space-between;
     background-color: #ffffff13
@@ -30,11 +31,12 @@ html {
 
 .navbar h3 {
     margin: 1rem;
-    margin-left: 1.5rem;
+    margin-left: 8rem;
     text-align: center;
     align-self: center;
     font-size: 2rem;
     font-family: 'Modern No. 20', sans-serif;
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.3);
 }
 
 .navbar a {
@@ -44,6 +46,7 @@ html {
     margin: 1rem;
     margin-right: 1.5rem;
     align-content: center;
+    float: right;
 }
 
 .navbar i{
@@ -69,12 +72,16 @@ html {
     font-family: 'Parisienne', cursive;
     font-size: 4rem;
     margin: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.3);
 }
+
 
 .hero h2 {
     font-family: 'Modern No. 20', sans-serif;
     font-size: 3rem;
     margin: 20px;
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.3);
                                                 
 }
 
@@ -84,7 +91,8 @@ html {
     font-family: 'open sans', sans-serif ;
     gap: 1rem;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 700;
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.3);
 
 }
 
@@ -93,13 +101,66 @@ html {
     font-family: 'open sans', sans-serif ;
     gap: 1rem;
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 700;
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.3);
 }
 
 .scrolldown img {
     width: 4rem;
 }
 
-.navbar a:hover {
+.scrolldown a:hover {
+    cursor: url(media/heartCursor.png), auto;
+}
+
+.menu {
+    position: relative;
+}
+.menu:hover .content a{
+    display: block;
+}
+
+.btn {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+    margin-right: 8rem;
+    margin-top: 10px;
+    
+}
+
+.btn img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.btn img:hover{
+    transform: scale(0.9);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.533);
+    border-radius: 5px;
+}
+
+.content a{
+    text-decoration: none;
+    color: black;
+    font-family: 'open sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: none;
+    transition: 0.3s all;
+    width: 100rem;
+    text-shadow: 3px 2px 3px rgba(255, 255, 255, 0.3);
+}
+
+.content a:hover{
+    opacity: 0.7;
 
 }
