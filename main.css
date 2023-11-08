@@ -6,7 +6,7 @@ body {
     background-size: stretch;
     background-repeat: no-repeat;
     scroll-behavior:smooth;
-    overflow: scroll;
+    overflow: hidden;
     scroll-snap-type: y mandatory;
 }
 html {
